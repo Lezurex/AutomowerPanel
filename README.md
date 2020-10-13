@@ -9,6 +9,7 @@ Dieses Control-Panel besitzt alle Funktionen, die die offizielle Husqvarna API z
 - Parken des Mähers nach Zeitplan, zeitlich begrenzter Override oder bis auf Weiteres
 - Stoppen des Mähers
 - Falls mehrere Mäher im Konto vorhanden sind, kann man diese einzeln wählen und steuern
+- Fehlermeldungen (Details ein-/ausklappbar)
 
 ## Verwendete Frameworks
 ### SB Admin
