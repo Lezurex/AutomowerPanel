@@ -32,7 +32,7 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
     <a class="navbar-brand" href="index.php">Automower Dashboard</a>
     <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i>
     </button>
-    <!-- Navbar Search-->
+    <!-- Navbar Select-->
     <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
         <div class="input-group">
             <div class="input-group-prepend">
@@ -77,22 +77,28 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid">
-                <div class="alert alert-success alert-dismissible fade show" id="alert-success" role="alert" style="margin-top: 24px;">
-                    <strong>Befehl erfolgreich!</strong> Der Befehl wurde erfolgreich in die Warteschlange gesendet und wird gleich ausgeführt!
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="alert alert-danger alert-dismissible fade show" id="alert-error" role="alert" style="margin-top: 24px;">
-                    <strong>Befehl fehlgeschlagen!</strong> Während der Ausführung des Befehles ist ein Fehler aufgetreten!
-                    <button type="button" class="btn btn-sm btn-secondary" data-toggle="collapse" data-target="#alert-error-collapse">Details anzeigen</button>
-                    <div class="collapse" id="alert-error-collapse">
-                        <code>Error 404: Resource not found</code>
+                <div id="alert-success" class="hidden">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 24px;">
+                        <strong>Befehl erfolgreich!</strong> Der Befehl wurde erfolgreich in die Warteschlange gesendet und wird gleich ausgeführt!
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
+
+                <div id="alert-error">
+                    <div class="alert alert-danger alert-dismissible fade hidden" role="alert" style="margin-top: 24px;">
+                        <strong>Befehl fehlgeschlagen!</strong> Während der Ausführung des Befehles ist ein Fehler aufgetreten!
+                        <button type="button" class="btn btn-sm btn-secondary" data-toggle="collapse" data-target="#alert-error-collapse">Details anzeigen</button>
+                        <div class="collapse" id="alert-error-collapse">
+                            <code>Error 404: Resource not found</code>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+
                 <h1 class="mt-4">Dashboard</h1>
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">Dashboard</li>
@@ -197,5 +203,6 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
 <script src="js/status.js"></script>
 <script src="js/start.js"></script>
+<script src="js/alert.js"></script>
 </body>
 </html>
