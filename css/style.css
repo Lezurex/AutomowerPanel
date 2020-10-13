@@ -1,0 +1,9 @@
+.header {
+    background-color: #dadada;
+    min-height: 100px;
+    vertical-align: middle;
+}
+
+#header-list {
+    vertical-align: middle;
+}
