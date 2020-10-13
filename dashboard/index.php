@@ -49,8 +49,7 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
             <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
                aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">Settings</a>
-                <a class="dropdown-item" href="#">Activity Log</a>
+                <a class="dropdown-item" href="#">Einstellungen</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="login.html">Logout</a>
             </div>
@@ -67,6 +66,10 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Dashboard
                     </a>
+                    <a class="nav-link" href="settings.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-cogs"></i></div>
+                        Einstellungen
+                    </a>
                 </div>
             </div>
             <div class="sb-sidenav-footer">
@@ -79,7 +82,8 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
             <div class="container-fluid">
                 <div id="alert-success" class="hidden">
                     <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 24px;">
-                        <strong>Befehl erfolgreich!</strong> Der Befehl wurde erfolgreich in die Warteschlange gesendet und wird gleich ausgeführt!
+                        <strong>Befehl erfolgreich!</strong> Der Befehl wurde erfolgreich in die Warteschlange gesendet
+                        und wird gleich ausgeführt!
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -87,9 +91,13 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
                 </div>
 
                 <div id="alert-error">
-                    <div class="alert alert-danger alert-dismissible fade hidden" role="alert" style="margin-top: 24px;">
-                        <strong>Befehl fehlgeschlagen!</strong> Während der Ausführung des Befehles ist ein Fehler aufgetreten!
-                        <button type="button" class="btn btn-sm btn-secondary" data-toggle="collapse" data-target="#alert-error-collapse">Details anzeigen</button>
+                    <div class="alert alert-danger alert-dismissible fade hidden" role="alert"
+                         style="margin-top: 24px;">
+                        <strong>Befehl fehlgeschlagen!</strong> Während der Ausführung des Befehles ist ein Fehler
+                        aufgetreten!
+                        <button type="button" class="btn btn-sm btn-secondary" data-toggle="collapse"
+                                data-target="#alert-error-collapse">Details anzeigen
+                        </button>
                         <div class="collapse" id="alert-error-collapse">
                             <code>Error 404: Resource not found</code>
                         </div>
@@ -119,12 +127,12 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
                                 </button>
                             </li>
                             <li class="list-inline-item">
-                                <button class="btn btn-danger" id="btn-start" data-toggle="modal"
+                                <button class="btn btn-danger" id="btn-stop" data-toggle="modal"
                                         data-target="#modal-stop">Stoppen
                                 </button>
                             </li>
                             <li class="list-inline-item">
-                                <button class="btn btn-primary" id="btn-start" data-toggle="modal"
+                                <button class="btn btn-primary" id="btn-park" data-toggle="modal"
                                         data-target="#modal-park">Parkieren
                                 </button>
                             </li>
@@ -156,7 +164,8 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Automower starten</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Schliessen" id="modal-start-closex">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Schliessen"
+                        id="modal-start-closex">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -183,26 +192,76 @@ if (!isset($_SESSION['ACCESS_TOKEN'])) {
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" id="modal-start-close" data-dismiss="modal">Schliessen</button>
+                <button type="button" class="btn btn-secondary" id="modal-start-close" data-dismiss="modal">Schliessen
+                </button>
                 <button type="button" class="btn btn-success" id="modal-start-submit">Starten</button>
             </div>
         </div>
     </div>
 </div>
+<!--PARK-->
+<div class="modal fade" id="modal-park" tabindex="-1" aria-labelledby="Parken" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Automower parken</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Schliessen" id="modal-park-closex">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="modal-park-type1" name="modal-park-type" class="custom-control-input"
+                           value="plan" checked>
+                    <label class="custom-control-label" for="modal-park-type1">Mit Zeitplan starten</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="modal-park-type2" name="modal-park-type" class="custom-control-input"
+                           value="time">
+                    <label class="custom-control-label" for="modal-park-type2">Zeitplan aus für...</label>
+                </div>
+                <div class="collapse" id="modal-park-time">
+                    <br>
+                    <div class="input-group">
+                        <input type="number" class="form-control" style="max-width: 8ch;" value="3"
+                               id="modal-park-time-input">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Stunden</span>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="modal-park-type3" name="modal-park-type" class="custom-control-input"
+                           value="ufn">
+                    <label class="custom-control-label" for="modal-park-type3">Bis auf Weiteres</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="modal-park-close" data-dismiss="modal">Schliessen
+                </button>
+                <button type="button" class="btn btn-primary" id="modal-park-submit">Parken</button>
+            </div>
+        </div>
+    </div>
 
-<input class="hidden" value="<?php getAppKey() ?>" id="values-appKey">
-<input class="hidden" value="<?php $_SESSION['ACCESS_TOKEN'] ?>" id="values-accessToken">
-<input class="hidden" value="49cad35f-c19f-446e-b93e-4efda46eb341" id="values-mowerID"> <!--TODO Make selectable-->
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-<script src="js/status.js"></script>
-<script src="js/start.js"></script>
-<script src="js/alert.js"></script>
+    <input class="hidden" value="<?php getAppKey() ?>" id="values-appKey">
+    <input class="hidden" value="<?php $_SESSION['ACCESS_TOKEN'] ?>" id="values-accessToken">
+    <input class="hidden" value="49cad35f-c19f-446e-b93e-4efda46eb341" id="values-mowerID"> <!--TODO Make selectable-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    <script src="js/mowers.js"></script>
+    <script src="js/status.js"></script>
+    <script src="js/start.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/stop.js"></script>
+    <script src="js/park.js"></script>
 </body>
 </html>
