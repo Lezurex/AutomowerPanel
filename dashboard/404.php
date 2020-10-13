@@ -1,5 +1,11 @@
+<?php
+
+http_response_code(404);
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />

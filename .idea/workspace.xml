@@ -10,16 +10,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2224acd7-6191-40a2-bad0-b0045c294a69" name="Default Changelist" comment="Add start functionality">
-      <change afterPath="$PROJECT_DIR$/dashboard/js/mowers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/js/park.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/js/stop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/park.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/stop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Automower.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Automower.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="2224acd7-6191-40a2-bad0-b0045c294a69" name="Default Changelist" comment="Add stop functionality&#10;Add park functionality&#10;Add selected mower remembered in cookie">
+      <change afterPath="$PROJECT_DIR$/dashboard/204.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/401.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/401.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/500.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/charts.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/js/mowers.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/js/mowers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/layout-sidenav-light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/layout-static.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/tables.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +76,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dashboard/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dashboard" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
@@ -78,6 +84,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Automower\dashboard" />
       <recent name="C:\xampp\htdocs\Automower\dashboard\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -125,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602581124869</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add stop functionality&#10;Add park functionality&#10;Add selected mower remembered in cookie">
+      <created>1602589289502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602589289502</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,29 +168,38 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add error message&#10;Add success message&#10;Add button loading animation" />
     <MESSAGE value="Add start functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add start functionality" />
+    <MESSAGE value="Add stop functionality&#10;Add park functionality&#10;Add selected mower remembered in cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add stop functionality&#10;Add park functionality&#10;Add selected mower remembered in cookie" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="358" key="#Deployment" timestamp="1602576666227">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="358" key="#Deployment/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602576666227" />
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602592908883">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602592908883" />
     <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1602570997173">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602570997173" />
-    <state x="1114" y="619" key="NewPhpFileDialog" timestamp="1602583691603">
+    <state x="1114" y="619" key="NewPhpFileDialog" timestamp="1602592005529">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="619" key="NewPhpFileDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602583691603" />
+    <state x="1114" y="619" key="NewPhpFileDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602592005529" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1602582331948">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602582331948" />
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1602581191376">
+    <state x="1019" y="322" key="VCS.ChangeListViewerDialog" timestamp="1602589353599">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602581191376" />
+    <state x="1019" y="322" key="VCS.ChangeListViewerDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602589353599" />
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1602589368319">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602589368319" />
     <state x="1097" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602581855891">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -185,10 +208,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="988" y="388" width="583" height="624" key="find.popup/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602531106856" />
-    <state x="1088" y="537" key="git4idea.ui.GitTagDialog" timestamp="1602581174979">
+    <state x="1088" y="537" key="git4idea.ui.GitTagDialog" timestamp="1602589355449">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1088" y="537" key="git4idea.ui.GitTagDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602581174979" />
+    <state x="1088" y="537" key="git4idea.ui.GitTagDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602589355449" />
     <state x="936" y="330" key="run.anything.popup" timestamp="1602588220414">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

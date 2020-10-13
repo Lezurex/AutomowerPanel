@@ -3,7 +3,9 @@ $("#mower-select").on("change", function () {
 })
 
 $().ready(function () {
-    $("#mower-select").val(readCookie("mower"))
+    let cookie = readCookie("mower");
+    if (cookie != "null" && cookie != null)
+        $("#mower-select").val(readCookie("mower"))
     createCookie("mower", $("#mower-select").val(), null)
 })
 
