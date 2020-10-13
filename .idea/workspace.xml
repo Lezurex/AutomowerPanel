@@ -10,7 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2224acd7-6191-40a2-bad0-b0045c294a69" name="Default Changelist" comment="Initial commit" />
+    <list default="true" id="2224acd7-6191-40a2-bad0-b0045c294a69" name="Default Changelist" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/Automower.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Automower.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/js/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/js/start.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +40,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1ilhIJgKCEfETQ6fZj4AyNhOIUJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,7 +58,6 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -79,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602571279296</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1602571339479</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602571339480</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,10 +131,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1114" y="619" key="NewPhpFileDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602523025479" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1602493045377">
+    <state x="781" y="345" key="SettingsEditor" timestamp="1602572906501">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602493045377" />
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602572906501" />
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1602571342286">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602571342286" />
+    <state x="1097" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602571419436">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1097" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602571419436" />
     <state x="988" y="388" width="583" height="624" key="find.popup" timestamp="1602531106856">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
