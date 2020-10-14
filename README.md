@@ -68,6 +68,7 @@ function getWeekdayStrings() {
 }
 ```
 Eine neue Husqvarna Applikation kann unter https://developer.husqvarnagroup.cloud/apps erstellt werden. Hierbei muss die **Authentication API** und die **Automower Connect API** aktiviert sein.
+In dieser Datei können auch noch gewisse Strings abgeändert werden, zum Beispiel für die verschiedenen Status.
 
 ## Verwendete Frameworks
 ### SB Admin
