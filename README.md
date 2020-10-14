@@ -14,7 +14,7 @@ Dieses Control-Panel besitzt alle Funktionen, die die offizielle Husqvarna API z
 ## Installation
 
 Um die Website selbst zu verwenden, muss noch eine zusätzliche Datei erstellt werden, worin die Konfiguration gespeichert ist. Dazu eine `config.php` Datei in `/php/` erstellen und den folgenden Code einfügen:
-```
+```PHP
 <?php
 
 function getAppKey() {
