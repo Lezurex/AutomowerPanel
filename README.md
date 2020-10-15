@@ -12,6 +12,7 @@ Dieses Control-Panel besitzt alle Funktionen, die die offizielle Husqvarna API z
 - Stoppen des Mähers
 - Falls mehrere Mäher im Konto vorhanden sind, kann man diese einzeln wählen und steuern
 - Fehlermeldungen (Details ein-/ausklappbar)
+- Serverseitiger Spamschutz (3 Sekunden Cooldown)
 
 ## Installation
 
