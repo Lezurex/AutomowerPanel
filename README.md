@@ -1,6 +1,7 @@
 # AutomowerPanel
 
 Mit dieser Website lässt sich der eigene Husvarna Automower auch auf dem PC steuern. Es werden die gängigen Befehle Starten, Stoppen und Parkieren unterstützt. Hierbei wird die offizielle API von Husqvarna verwendet. Jeder Benutzer kann sich mit seinem Husqvarna Konto anmelden und direkt loslegen.
+**DISCLAIMER**: Diese Seite war ein Probeprojekt eines Informatiklehrlings im ersten Lehrjahr. Die korrekte Funktion ist nicht garantiert! Jedoch darf dieses Projekt gerne weiterentwickelt werden.
 
 ## Funktionen
 Dieses Control-Panel besitzt alle Funktionen, die die offizielle Husqvarna API zu bieten hat.
