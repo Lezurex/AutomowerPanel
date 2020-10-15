@@ -84,3 +84,5 @@ Bei dieser Website wurde [Bootstrap](https://getbootstrap.com/) und [jQuery](htt
 
 # Lizenz
 Dieses Projekt ist unter der GNU GPU v3 lizenziert und darf dementsprechend verwendet werden. Weitere Informationen dazu finden sich [hier](https://github.com/Lezurex/AutomowerPanel/blob/main/LICENSE).
+
+Das Logo ist von [Freepik](https://www.flaticon.com/de/autoren/freepik).
