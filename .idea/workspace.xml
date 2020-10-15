@@ -10,22 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2224acd7-6191-40a2-bad0-b0045c294a69" name="Default Changelist" comment="Add stop functionality&#10;Add park functionality&#10;Add selected mower remembered in cookie">
-      <change afterPath="$PROJECT_DIR$/dashboard/204.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/logout.php" afterDir="false" />
+    <list default="true" id="2224acd7-6191-40a2-bad0-b0045c294a69" name="Default Changelist" comment="Add logout&#10;Bugfixes &amp; improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/401.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/401.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/500.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/charts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/js/mowers.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/js/mowers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/layout-sidenav-light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/layout-static.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/js/status.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/js/status.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/getStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/getStatus.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +93,8 @@
       <workItem from="1602488005499" duration="14721000" />
       <workItem from="1602522115569" duration="7487000" />
       <workItem from="1602570937061" duration="61000" />
+      <workItem from="1602655990792" duration="1242000" />
+      <workItem from="1602743248859" duration="1997000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602571279296</created>
@@ -139,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602589289502</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add logout&#10;Bugfixes &amp; improvements">
+      <created>1602593291266</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602593291266</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +168,8 @@
     <MESSAGE value="Add error message&#10;Add success message&#10;Add button loading animation" />
     <MESSAGE value="Add start functionality" />
     <MESSAGE value="Add stop functionality&#10;Add park functionality&#10;Add selected mower remembered in cookie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add stop functionality&#10;Add park functionality&#10;Add selected mower remembered in cookie" />
+    <MESSAGE value="Add logout&#10;Bugfixes &amp; improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add logout&#10;Bugfixes &amp; improvements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="358" key="#Deployment" timestamp="1602576666227">
@@ -196,10 +196,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1019" y="322" key="VCS.ChangeListViewerDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602589353599" />
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1602589368319">
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1602593340429">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602589368319" />
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602593340429" />
     <state x="1097" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602581855891">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

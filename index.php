@@ -53,7 +53,7 @@ if (isset($_GET['code'])) {
 }
 
 if (!$_SESSION['authorized']) {
-    header("Location: https://api.authentication.husqvarnagroup.dev/v1/oauth2/authorize?client_id=376ed738-769f-4f29-a8d5-6c7f96720fc3&redirect_uri=https://automower.test/");
+    header("Location: https://api.authentication.husqvarnagroup.dev/v1/oauth2/authorize?client_id=" . getAppKey() . "&redirect_uri=https://automower.test/");
 } else {
     header("Location: /dashboard");
 }

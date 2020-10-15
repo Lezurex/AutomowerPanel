@@ -1,3 +1,9 @@
 .hidden {
     display: none;
 }
+
+#status-refresh {
+    float: right;
+    color: white;
+    cursor: pointer;
+}

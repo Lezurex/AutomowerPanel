@@ -89,7 +89,8 @@ if ($code == 200) {
     }
 
     echo '<div class="card ' . $color . ' text-white mb-4">
-                                    <div class="card-body">Aktivität: ' . $activity_string . '<br>
+                                    <div class="card-body"><button id="status-refresh" class="btn btn-success"><i class="fas fa-sync-alt"></i></button>
+                                    Aktivität: ' . $activity_string . '<br>
                                     Status: ' . $state_string . '
                                     ' . $nextStart . '<br>
                                     <div class="float-right"><i class="fas fa-' . $battery_icon . '"></i> ' . $battery . '%</div></div>
