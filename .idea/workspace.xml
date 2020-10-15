@@ -10,10 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2224acd7-6191-40a2-bad0-b0045c294a69" name="Default Changelist" comment="Add serverside spam protection">
-      <change afterPath="$PROJECT_DIR$/dashboard/assets/img/favicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/index.php" afterDir="false" />
+    <list default="true" id="2224acd7-6191-40a2-bad0-b0045c294a69" name="Default Changelist" comment="Add favicon&#10;Add logo">
+      <change beforePath="$PROJECT_DIR$/php/spamdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/php/spamdata.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1602522115569" duration="7487000" />
       <workItem from="1602570937061" duration="61000" />
       <workItem from="1602655990792" duration="1242000" />
-      <workItem from="1602743248859" duration="6459000" />
+      <workItem from="1602743248859" duration="6763000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602571279296</created>
@@ -150,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602748582834</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add favicon&#10;Add logo">
+      <created>1602750099388</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602750099388</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +188,8 @@
     <MESSAGE value="Add logout&#10;Bugfixes &amp; improvements" />
     <MESSAGE value="Add status refresh button" />
     <MESSAGE value="Add serverside spam protection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add serverside spam protection" />
+    <MESSAGE value="Add favicon&#10;Add logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add favicon&#10;Add logo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="358" key="#Deployment" timestamp="1602576666227">
@@ -214,14 +220,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1019" y="322" key="VCS.ChangeListViewerDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602589353599" />
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1602748589585">
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1602750127054">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602748589585" />
-    <state x="1097" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602745418544">
+    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602750127054" />
+    <state x="1097" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602749904529">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1097" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602745418544" />
+    <state x="1097" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1602749904529" />
     <state x="988" y="388" width="583" height="624" key="find.popup" timestamp="1602531106856">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
