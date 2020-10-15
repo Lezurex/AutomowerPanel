@@ -1,11 +1,18 @@
 <?php
 
 include "config.php";
+require "SpamProtection.php";
 
 session_start();
 
 if (!isset($_SESSION['ACCESS_TOKEN'])) {
     echo "401";
+    exit();
+}
+
+if (SpamProtection::isSpam($_SERVER['REMOTE_ADDR'])) {
+    http_response_code(429);
+    echo "Webserver Spam Protection";
     exit();
 }
 

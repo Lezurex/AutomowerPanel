@@ -22,9 +22,13 @@ function updateStatus() {
                 updateStatus();
             })
         },
-        error: function () {
-            $("#status-body").html('<div class="card bg-danger text-white mb-4">\n<button id="status-refresh" class="btn btn-success"><i class="fas fa-sync-alt"></i></button>\n' +
-                '                                    <div class="card-body">Der Status konnte nicht abgefragt werden.</div>\n' +
+        error: function (xhr) {
+            let reason = "Der Status konnte nicht abgefragt werden."
+            if (xhr.status === 429) {
+                reason = "Der Status konnte wegen zu vielen Anfragen nicht abgefragt werden. Versuche es in ein paar Sekunden nochmals."
+            }
+            $("#status-body").html('<div class="card bg-danger text-white mb-4">\n' +
+                '                                    <div class="card-body"><button id="status-refresh" class="btn btn-success"><i class="fas fa-sync-alt"></i></button>' + reason + '</div>\n' +
                 '                                </div>')
             $("#status-refresh").click(function (e) {
                 $("#status-body").html("<div class=\"card bg-secondary text-white mb-4\">\n" +
