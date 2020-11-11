@@ -2,6 +2,8 @@
 
 <img src="https://github.com/Lezurex/AutomowerPanel/blob/main/dashboard/assets/img/favicon.svg" height="50" alt="logo">
 
+> The german README can be found [here](https://github.com/Lezurex/AutomowerPanel/blob/main/README_DE.md).
+
 With this Website you can control your Husqvarna Automower via your PC. The general commands start, stop and park are supported. The official API from Husqvarna is used. Every user can log in with their Husqvarna account and get started right away.<br />
 Due to the limitation of the API to a maximum of 10'000 calls per month, the status has to be updated manually in order to save this volume of requests.<br />
 **DISCLAIMER**: This site was a trial project of a first year computer science apprentice. The correct function is not guaranteed! However, this project may be developed further.
