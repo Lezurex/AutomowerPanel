@@ -85,6 +85,6 @@ For the panel the [template of Start Bootstrap](https://startbootstrap.com/templ
 The website is using [Bootstrap](https://getbootstrap.com/) and [jQuery](https://jquery.com).
 
 # License
-This project is licensed under the GNU GPU v3 and may be used accordingly. Further information can be found [here](https://github.com/Lezurex/AutomowerPanel/blob/main/LICENSE).
+This project is licensed under the GNU GPL v3 and may be used accordingly. Further information can be found [here](https://github.com/Lezurex/AutomowerPanel/blob/main/LICENSE).
 
 The logo is from [Freepik](https://www.flaticon.com/de/autoren/freepik).
