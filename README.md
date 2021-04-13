@@ -1,4 +1,4 @@
-# AutomowerPanel
+# 🤖 AutomowerPanel
 
 <img src="https://github.com/Lezurex/AutomowerPanel/blob/main/dashboard/assets/img/favicon.svg" height="50" alt="logo">
 
@@ -8,7 +8,7 @@ With this Website you can control your Husqvarna Automower via your PC. The gene
 Due to the limitation of the API to a maximum of 10'000 calls per month, the status has to be updated manually in order to save this volume of requests.<br />
 **DISCLAIMER**: This site was a trial project of a first year computer science apprentice. The correct function is not guaranteed! However, this project may be developed further.
 
-## Features
+## 🎮 Features
 This control panel has all the functionality that the official Husqvarna API has to offer.
 - Current status of the lawnmower can be viewed at any time
 - Starting the mower according to schedule or temporary override
@@ -18,7 +18,7 @@ This control panel has all the functionality that the official Husqvarna API has
 - Error messages (details can be folded in/out)
 - Server-side spam protection (3 seconds cool down)
 
-## Installation
+## 💾 Installation
 
 In order to use the website itself, an additional file must be created in which the configuration is stored. To do this, create a file `config.php` file in `/php/` and insert the following code:
 ```PHP
@@ -77,14 +77,14 @@ function getWeekdayStrings() {
 A new Husqvarna application can be created at https://developer.husqvarnagroup.cloud/apps The **Authentication API** and **Automower Connect API** must be enabled.
 In this file you can also change certain strings, for example for the different statuses.
 
-## Used frameworks
+## ♻ Used frameworks
 ### SB Admin
 For the panel the [template of Start Bootstrap](https://startbootstrap.com/templates/sb-admin/) was used und modified.
 
 ### Bootstrap & jQuery
 The website is using [Bootstrap](https://getbootstrap.com/) and [jQuery](https://jquery.com).
 
-# License
+# ⚖️ License
 This project is licensed under the GNU GPL v3 and may be used accordingly. Further information can be found [here](https://github.com/Lezurex/AutomowerPanel/blob/main/LICENSE).
 
 The logo is from [Freepik](https://www.flaticon.com/de/autoren/freepik).
